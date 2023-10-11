@@ -7,7 +7,7 @@ class WeatherViewModel with ChangeNotifier {
   WeatherViewModel() {
     fetchWeather();
   }
-  Weather weather = Weather(city: 'city', temperature: 60, humidity: 78, condition: 'Sunny');
+  Weather weather = Weather(city: 'city', temperature: 50, humidity: 78, condition: 'Sunny');
 
   Future<void> fetchWeather() async {
     weather = await _weatherRepository.getWeather();
